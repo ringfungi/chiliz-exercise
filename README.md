@@ -50,4 +50,4 @@ Ansible Configuration: The playbook automates the deployment of the Python micro
 The microservice, which is just a hello world Python app, has been previously packaged and pushed to my Docker repository. The deployment definition sets up a Kubernetes Deployment resource that specifies the number of replicas, container image, resource limits and requests.
 The HPA definition configures a HorizontalPodAutoscaler resource to autoscale the microservice based on CPU utilization, for which the target is 50%.
 
-These architectural choices ensure the seamless deployment and management of the microservice on AWS EKS, with scalable infrastructure, network isolation, and monitoring capabilities.
+These architectural choices ensure the seamless deployment and management of the microservice on AWS EKS, with scalable infrastructure, network isolation and monitoring capabilities.
