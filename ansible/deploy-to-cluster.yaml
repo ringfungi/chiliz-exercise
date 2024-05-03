@@ -1,0 +1,13 @@
+---
+- name: Deploy Python microservice and configure HPA
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Apply microservice deployment
+      command: kubectl apply -f ../service/deploy_microservice.yaml
+
+    - name: Apply microservice service
+      command: kubectl apply -f ../service/service.yaml
+
+    - name: Apply HPA configuration
+      command: kubectl apply -f ../service/hpa.yaml
