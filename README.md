@@ -17,25 +17,23 @@ This project deploys a dockerized Python microservice to an AWS EKS cluster that
 
 Initialize Terraform, create and apply plan:
 
-    ```
     terraform init
 
     terraform plan -out=tfplan    
 
     terraform apply "tfplan"
-    ```
+
 
 Before running the playbook, make sure your kubeconfig file is correctly configured with the newly created cluster executing:
 
-    ```
+
     aws eks update-kubeconfig --region eu-west-1 --name chiliz-cluster
-    ```
+
 
 Run the Ansible playbook to configure the Kubernetes cluster:
 
-    ```
+
     ansible-playbook deploy-to-cluster.yaml
-    ```
 
 
 ### Monitoring
