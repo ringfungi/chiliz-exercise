@@ -24,7 +24,7 @@ Initialize Terraform, create and apply plan:
     terraform apply "tfplan"
 
 
-Before running the playbook, make sure your kubeconfig file is correctly configured with the newly created cluster executing:
+Before running the playbook, make sure your kubeconfig file is correctly configured with the newly created cluster by executing:
 
 
     aws eks update-kubeconfig --region eu-west-1 --name chiliz-cluster
