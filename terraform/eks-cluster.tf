@@ -24,11 +24,11 @@ module "eks" {
       max_size     = 10
 
       labels = {
-        role = "spot"
+        role = "on_demand"
       }
 
       instance_types = ["t3.medium"]
-      capacity_type  = "SPOT"
+      capacity_type  = "ON_DEMAND"
     }
   }
 }
